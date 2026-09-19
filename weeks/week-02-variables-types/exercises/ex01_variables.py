@@ -10,20 +10,47 @@ Mục tiêu: Hiểu cách khai báo và sử dụng biến
 # diem_tb = ???   (float)
 # dang_hoc = ???  (bool)
 # In ra giá trị và kiểu dữ liệu của mỗi biến bằng type()
+ten : str = "Hoang Trinh"
+tuoi: int = 19
+diem_tb: float = 7.0
+dang_hoc: bool = True
 
+print (ten, type(ten))
+print (tuoi, type(tuoi))
+print (diem_tb, type(diem_tb))
+print (dang_hoc, type(dang_hoc))
 
 # TODO 2: Hoán đổi giá trị 2 biến KHÔNG dùng biến tạm
 # a = 10
 # b = 20
 # Sau hoán đổi: a = 20, b = 10
 # Gợi ý: Python cho phép a, b = b, a
+a = 20
+b = 10
+a,b = b,a
+
+print("a sau khi hoan doi la:", a)
+print("b sau khi hoan doi la:", b)
 
 
 # TODO 3: Augmented assignment
 # Cho x = 100. Dùng +=, -=, *=, //= để biến đổi x qua 4 bước
 # In ra x sau mỗi bước
-
+x = 100
+print ("gia tri ban dau khoi gan cua x la:", x)
+x += 10
+print ("gia tri cua x sau khi cong 10 la:", x)
+x -= 20
+print ("gia tri cua x khi tru 20 la", x)
+x *= 2
+print ("gia tri cua x khi nhan 2 la:", x)
+x //= 3
+print ("gia tri cua x sau khi chia 3 la:", x)
 
 # TODO 4 (Thử thách): Multiple assignment
 # Gán 3 biến trên 1 dòng: ho, ten, tuoi = ???
 # In ra: "Họ tên: [ho] [ten], [tuoi] tuổi"
+Ho = "Tran"
+Ten = "Trinh"
+Tuoi ="19"
+print(f"Ho ten:{Ho} {Ten},Tuoi: {Tuoi}")
